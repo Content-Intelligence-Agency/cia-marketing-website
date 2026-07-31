@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CIA — Content Intelligence Agency</title>
+<meta name="description" content="Content Intelligence Agency brings together AI specialists, media strategists and engineers to solve complex video challenges with content analysis, precision clipping and synthetic audience testing.">
+<link rel="stylesheet" href="colors_and_type.css">
+<link rel="stylesheet" href="site.css">
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+</head>
+<body class="cia">
+
+  <!-- ============ NAV ============ -->
+  <nav class="nav">
+    <div class="container">
+      <div class="row">
+        <a href="#top" class="brand"><img src="assets/cia-logo.svg" alt="Content Intelligence Agency"></a>
+        <div class="links">
+          <a href="#capabilities">Capabilities</a>
+          <a href="#why-cia">Why CIA</a>
+          <a href="#formats">Formats</a>
+          <a href="#demo">Get started</a>
+        </div>
+        <div class="right">
+          <a class="btn sm" href="#" data-modal="demo">Book a demo</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  
+  <div class="container">
+    <div class="hero-bg-wrap">
+      <div class="dot-background"></div>
+
+      <div class="hero-split">
+        <div class="hero-copy">
+          <span class="tag"><span class="pip">CIA</span> Content Intelligence Agency · World-class AI</span>
+          <h1>World-class AI.<br> <span class="amber">Built for media.</span></h1>
+          
+          
+        </div>
+        <div class="hero-logo-wrap">
+          <img src="assets/cia-logo.svg" alt="Content Intelligence Agency">
+        </div>
+      </div>
+      <p class="product-type">Stop guessing why content works.</p>
+      <p class="product-type">We build advanced AI for professional media, focused on three things:<p>
+      <p class="product-type"><b>Analyse content. Find and clip the right moments. Test creative choices before release.</b></p>
+      
+      <p class="product-type">Most teams still decide on instinct. The data arrives after the money is spent. CIA flips that.</p>
+     
+      <div class="cta">
+          <a class="btn" href="#" data-modal="demo">Book a demo<i data-lucide="arrow-right"></i></a>
+          <span class="micro">EN · NL — built for professional media</span>
+      </div>
+
+      
+     </div>
+
+       
+
+    <div class="shot">
+      <div class="browserframe">
+        <div class="bar">
+          <span class="dot" style="background:#ff5f57"></span>
+          <span class="dot" style="background:#febc2e"></span>
+          <span class="dot" style="background:#28c840"></span>
+          <span class="url">demo.contentintelligence.tech/spotting/survivor/episodes/11</span>
+        </div>
+        <img src="assets/product-spotting-dark.png" alt="CIA Spotting workspace">
+      </div>
+    </div>
+  </div>
+</header>
+
+  <!-- ============ CAPABILITIES ============ -->
+  <section class="section" id="capabilities">
+    <div class="container">
+      <div class="section-head reveal center">
+        <p class="eyebrow center" style="justify-content:center"><span class="dash"></span>Capabilities<span class="dash"></span></p>
+        <h2>Three capabilities. <br><span style="color:var(--amber)">One intelligence layer.</span></h2>
+       </div>
+      <div class="prod-system">
+        <div class="split">
+          <div class="copy reveal">
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
+              <p class="eyebrow" style="margin:0" id="content-analysis"><span class="prod-num">01</span>Content Analysis</p>
+              <span class="cap-badge cap-badge-available">Available Now</span>
+            </div>
+            <h3>Turn video into <span class="amber">structured, measurable intelligence</span>.</h3>
+            <p>CIA breaks content into shots, scenes and segments, then analyses people, speech, emotions, topics, actions and recurring patterns.</p>
+            <p>We connect that analysis to viewer scores and performance data to see what works, where response changes and which creative choices matter.</p>
+              
+          </div>
+          <div class="visual reveal"><img src="assets/product-clustering-dark.png" alt="Content analysis workspace"></div>
+    
+        </div>
+
+        <div class="usage">
+            <div class="usage-head">Use it for:</div>
+            <div class="nodes">
+              <div class="node">Program analysis</div>
+              <div class="node">Format improvement</div>
+              <div class="node">Audience insights</div>
+              <div class="node">Metadata enrichment</div><br>
+              <div class="node">Archive intelligence</div>
+              <div class="node">Diversity and representation</div>
+            </div>
+        </div>
+
+        <div class="prod-connector">
+          <span class="conn-line"></span>
+          <span class="conn-line"></span>
+          <span class="conn-line"></span>
+        </div>
+
+        <div class="split rev">
+          <div class="copy reveal">
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
+              <p class="eyebrow" style="margin:0" id="precision-clipping"><span class="prod-num">02</span>Precision Clipping</p>
+              <span class="cap-badge cap-badge-pilot">Pilot</span>
+            </div>
+            <h3>Find the scene you mean. <span class="amber">Not just a matching word or object.</span></h3>
+            <p>Because CIA understands the structure and context of the video, users can search for a format beat, quote, reaction, sponsor moment or visual event in natural language.</p>
+            <p>The result is less irrelevant footage and a faster route to the moment that matters.</p>
+            <p> Easy, Accurate, Decision-ready. </p>
+          </div>
+          <div class="reveal">
+            <div class="clipdemo">
+              <div class="clip-search active" id="clipSearch">
+                <i data-lucide="search" class="mag"></i>
+                <div class="clip-search-text">
+                  <span id="clipTyped"></span><span class="cursor" id="clipCursor"></span>
+                </div>
+              </div>
+              <div class="clip-result" id="clipResult">
+                <div class="clip-result-thumb" id="clipThumb">
+                  <img id="clipImg" src="" alt="" />
+                  <div class="tc-badge" id="clipTC"></div>
+                </div>
+                <div class="clip-result-info">
+                  <div class="clip-result-title" id="clipTitle"></div>
+                  <div class="clip-result-meta" id="clipMeta"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="usage">
+            <div class="usage-head">Use it for:</div>
+            <div class="nodes">
+              <div class="node">Promos</div>
+              <div class="node">Social clips</div>
+              <div class="node">Archive reuse</div>
+              <div class="node">Localisation</div><br>
+              <div class="node">Licensing</div>
+              <div class="node">Compliance</div>
+              <div class="node">Sports highlights</div>
+            </div>
+        </div>
+
+        <div class="prod-connector">
+          <span class="conn-line"></span>
+          <span class="conn-line"></span>
+          <span class="conn-line"></span>
+        </div>
+
+        <div class="split">
+          <div class="copy reveal">
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
+              <p class="eyebrow" style="margin:0" id="synthetic-audience"><span class="prod-num">03</span>Synthetic Audience</p>
+              <span class="cap-badge cap-badge-pilot">Pilot</span>
+            </div>
+            <h3>Test your content <span class="amber">before</span> you reach your real audience.</h3>
+            <p>CIA combines content analysis with viewer data to explore how different cuts, openings, lengths and story choices may perform.</p>
+            <p>You keep the creative judgement. CIA gives it better evidence while there is still time to act.</p>
+          </div>
+          <div class="visual light reveal"><img src="assets/product-synthetic-audience.png" alt="Synthetic audience dashboard"></div>
+        </div>
+        
+        <div class="usage">
+            <div class="usage-head">Use it to explore:</div>
+            <div class="nodes">
+              <div class="node">Alternative cuts</div>
+              <div class="node">Opening sequences</div>
+              <div class="node">Potential drop-off points</div><br>
+              <div class="node">Audience differences</div>
+              <div class="node">Creative pre-testing</div>
+            </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY CIA ============ -->
+  <section class="section why" id="why-cia">
+    <div class="container">
+      <div class="why-grid">
+        <div class="reveal">
+          <div class="why-intro-card">
+            <p class="eyebrow"><span class="dash"></span>Why CIA</p>
+            <h2 class="section-head" style="margin:10">Elite <span style="color:var(--amber)">AI</span> expertise, applied to real <span style="color:var(--amber)">media</span> problems.</h2>
+            <p class="lead">CIA works with a network of leading AI specialists and academic talent, supported by senior professionals who understand content, formats, audiences and production.</p>
+            <p class="lead">That combination matters.</p> 
+            <p class="lead">We do not start with a generic model and look for somewhere to apply it. We start with the media problem, then assemble the right expertise, models and workflow to solve it.</p>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="why-stack">
+            <div class="why-point">
+              <div class="why-icon"><i data-lucide="film"></i></div>
+              <div>
+                <h3>Media expertise</h3>
+                <p>Built around the way professional content is created, measured and reused.</p>
+              </div>
+            </div>
+            <div class="why-point">
+              <div class="why-icon"><i data-lucide="cpu"></i></div>
+              <div>
+                <h3>Specialist AI</h3>
+                <p>A network of advanced researchers, engineers and data scientists.</p>
+              </div>
+            </div>
+            <div class="why-point">
+              <div class="why-icon"><i data-lucide="users"></i></div>
+              <div>
+                <h3>One continuous team</h3>
+                <p>Senior specialists translate the challenge. Technical teams build and improve the solution.</p>
+              </div>
+            </div>
+            <div class="why-point">
+              <div class="why-icon"><i data-lucide="globe"></i></div>
+              <div>
+                <h3>European and portable</h3>
+                <p>Built in the Netherlands using open technology designed to work with client data and systems.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+  </section>
+
+
+  <!-- ============ FORMATS ============ -->
+  <section class="section sowhat" id="formats">
+    <div class="container formats-grid">
+      <!-- Left Column: The Messaging -->
+      <div class="section-head reveal">
+        <p class="eyebrow"><span class="dash"></span>Formats</p>
+        <h2>Any <span style="color: var(--amber);">video</span>. Any <span style="color: var(--amber);">format.</span></h2>
+        <h3>Long-form or short-form. Scripted or unscripted.</h3>
+        <p class="lead">CIA gives media organisations a deeper understanding of the content they make and own.</p>
+      </div>
+
+      <!-- Right Column: Uniform Fixed Asset Grid -->
+      <div class="formats-visual-grid" aria-hidden="true">
+        <div class="format-file file-teal">Drama</div>
+        <div class="format-file file-neutral">Entertainment</div>
+        <div class="format-file file-amber">Reality</div>
+        <div class="format-file file-amber">Talk shows</div>
+        <div class="format-file file-teal">News</div>
+        <div class="format-file file-neutral">Sport</div>
+        <div class="format-file file-neutral">Advertising</div>
+        <div class="format-file file-amber">Social video</div>
+        <div class="format-file file-teal">Archives</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="slider">
+  <div class="slide-track">
+    <div class="slide"><img src="assets/afspraak-logo.png" alt="Afspraak" /></div>
+    <div class="slide"><img src="assets/BanijaySurvivorLogo.png" alt="Banijay Survivor" /></div>
+    <div class="slide"><img src="assets/hunted-logo.jpg" alt="Hunted" /></div>
+    <div class="slide"><img src="assets/kunst-logo.jpg" alt="Kunst" /></div>
+    <div class="slide"><img src="assets/Les_douze_coups_de_midi_logo.png" alt="Les douze coups de midi" /></div>
+    <div class="slide"><img src="assets/rtl-tonight-logo.jpg" alt="RTL Tonight" /></div>
+
+    <!-- duplicate set for a seamless loop -->
+    <div class="slide" aria-hidden="true"><img src="assets/afspraak-logo.png" alt="" /></div>
+    <div class="slide" aria-hidden="true"><img src="assets/BanijaySurvivorLogo.png" alt="" /></div>
+    <div class="slide" aria-hidden="true"><img src="assets/hunted-logo.jpg" alt="" /></div>
+    <div class="slide" aria-hidden="true"><img src="assets/kunst-logo.jpg" alt="" /></div>
+    <div class="slide" aria-hidden="true"><img src="assets/Les_douze_coups_de_midi_logo.png" alt="" /></div>
+    <div class="slide" aria-hidden="true"><img src="assets/rtl-tonight-logo.jpg" alt="" /></div>
+  </div>
+</div>
+
+  <!-- ============ CTA ============ -->
+  <section class="cta-sec" id="demo">
+    <div class="container">
+      <div class="cta-box">
+        <div class="inner">
+          <p class="eyebrow" style="justify-content:center">Get started</p>
+          <h2>Start with one real question</h2>
+          <p>Bring us a title, an archive or a workflow. Bring an episode and a question. We'll show you the moments that move the numbers, and the cut we'd ship.</p>
+          <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+            <a class="btn" href="#" data-modal="demo">Book a demo<i data-lucide="arrow-right"></i></a>
+            <!-- <a class="btn ghost" href="#" data-modal="demo" style="color:var(--amber-soft)">Talk to the team</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <div class="container">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <img src="assets/cia-logo-text.svg" alt="Content Intelligence Agency">
+          <p>World-class AI. Built for media.</p>
+        </div>
+        <div class="foot-col">
+          <h4>Capabilities</h4>
+          <a href="#content-analysis">Content Analysis</a>
+          <a href="#precision-clipping">Precision Clipping</a>
+          <a href="#synthetic-audience">Synthetic Audience</a>
+        </div>
+        <div class="foot-col">
+          <h4>Company</h4>
+          <a href="#why-cia">Why CIA</a>
+          <a href="#demo">Book a demo</a>
+          <a href="#demo">Talk to the team</a>
+        </div>
+        <div class="foot-col">
+          <h4>Location</h4>
+          Hilversum, the Netherlands
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© 2026 Content Intelligence Agency</span>
+        <span>EN · NL — built for professional media</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ DEMO MODAL ============ -->
+  <div class="modal-overlay" id="demoModal" role="dialog" aria-modal="true" aria-labelledby="demoModalTitle">
+    <div class="modal">
+      <button class="modal-close" aria-label="Close"><i data-lucide="x"></i></button>
+      <p class="eyebrow"><span class="dash"></span>Book a demo</p>
+      <h2 id="demoModalTitle">See CIA on your own format.</h2>
+      <p class="modal-sub">Bring an episode and a question. We'll show you the moments that move the numbers — and the cut we'd ship.</p>
+      <form class="demo-form" id="demoForm" novalidate>
+        <div class="field-row">
+          <div class="field">
+            <label for="df-name">Your name</label>
+            <input type="text" id="df-name" name="name" placeholder="Jan de Vries" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="df-company">Company</label>
+            <input type="text" id="df-company" name="company" placeholder="RTLNL, NPO, Talpa…" autocomplete="organization" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="df-email">Work email</label>
+          <input type="email" id="df-email" name="email" placeholder="you@yourcompany.com" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="df-q">What format or question will you bring? <span class="opt">(optional)</span></label>
+          <textarea id="df-q" name="question" rows="3" placeholder="e.g. Why did episode 6 outperform episode 3 in 25–34s?"></textarea>
+        </div>
+        <button type="submit" class="btn" style="width:100%;justify-content:center">Request demo<i data-lucide="arrow-right"></i></button>
+        <p class="form-note">No commitment. We'll follow up within one business day.</p>
+      </form>
+      <div class="demo-success" id="demoSuccess" hidden>
+        <div class="success-icon"><i data-lucide="check"></i></div>
+        <h3>You're on the list.</h3>
+        <p>We'll reach out within one business day to set up your session.</p>
+      </div>
+      <p class="form-note" id="demoError" style="color:#e35b5b;display:none">Something went wrong — please try again.</p>
+    </div>
+  </div>
+  
+  
+  <script src="scripts/clipping.js"></script>
+  <script src="scripts/demo.js"></script>
+
+  
+</body>
+</html>

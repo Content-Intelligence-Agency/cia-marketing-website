@@ -1,0 +1,209 @@
+/* ============================================================
+   CIA — Content Intelligence Agency
+   Colors & Type foundations
+   ------------------------------------------------------------
+   Light-first. The default :root ships the light palette. Add
+   data-theme="dark" or class "theme-dark" to flip to the dark
+   palette. Accent is a single golden amber (#E69F00) used for
+   primary actions, active states, selection and brand emphasis.
+
+   Fonts are loaded from Google Fonts (see <link> in HTML or the
+   @import below). Hanken Grotesk is used as the nearest match to
+   the product's neutral UI grotesque — SUBSTITUTION, see README.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+:root {
+  /* ---- Brand accent (mode-independent) ---- */
+  --amber:            #E69F00;  /* primary accent — buttons, active, selection */
+  --amber-bright:     #F8C712;  /* lighter amber used in charts / glows */
+  --amber-hover:      #F5AB10;  /* hover */
+  --amber-press:      #C98C00;  /* pressed */
+  --amber-soft:       #FBF2E7;  /* faint amber wash (light mode segment fill) */
+  --on-amber:         #141414;  /* text/icon ON amber fills (dark, high contrast) */
+
+  /* ---- Data-visualisation categorical palette ---- */
+  --viz-amber:        #E69F00;
+  --viz-magenta:      #FF1FA8;
+  --viz-teal:         #12CDD4;
+  --viz-amber-tint:   #F8C712;
+  --viz-magenta-tint: #FF8FD6;
+  --viz-teal-tint:    #8FE9ED;
+  --viz-neutral:      #9A9A9A;
+
+  /* ---- Selection / status ---- */
+  --select:           #E69F00;  /* amber selection ring */
+  --rose-highlight:   #F9DADD;  /* soft rose used for highlighted scene range (light) */
+  --danger:           #E5484D;
+  --ok:               #2FA86A;
+
+  /* ============ LIGHT THEME (default / canonical) ============ */
+  --bg:           #FFFFFF;  /* page canvas */
+  --surface-1:    #FAFAFA;  /* app canvas / top bar */
+  --surface-2:    #F4F2F2;  /* cards, panels */
+  --surface-3:    #ECEAEA;  /* raised / hover surface */
+  --chip:         #F1F1F1;  /* pill / chip background */
+  --chip-hover:   #E7E7E7;
+  --border:       #E2E2E2;
+  --border-strong:#CFCFCF;
+  --divider:      #ECECEC;
+
+  --fg:           #161616;  /* primary text */
+  --fg-2:         #2A2A2A;  /* near-primary */
+  --fg-muted:     #6B6B6B;  /* secondary text */
+  --fg-subtle:    #9A9A9A;  /* tertiary / disabled */
+
+  --scrim:        rgba(0,0,0,0.35);
+  --shadow-1:     0 1px 2px rgba(0,0,0,0.06);
+  --shadow-2:     0 8px 24px rgba(0,0,0,0.08);
+  --shadow-3:     0 18px 48px rgba(0,0,0,0.12);
+
+  /* ---- Type families ---- */
+  --font-sans:  'Hanken Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --font-mono:  'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+
+  /* ---- Type scale (UI density: product is fairly compact) ---- */
+  --text-display: 700 44px/1.08 var(--font-sans);
+  --text-h1:      700 30px/1.15 var(--font-sans);
+  --text-h2:      700 22px/1.2  var(--font-sans);
+  --text-h3:      600 17px/1.3  var(--font-sans);
+  --text-body:    400 15px/1.5  var(--font-sans);
+  --text-body-sm: 400 13px/1.45 var(--font-sans);
+  --text-label:   600 13px/1.2  var(--font-sans);
+  --text-button:  700 14px/1    var(--font-sans);
+  --text-caption: 500 11px/1.3  var(--font-sans);
+  --text-mono:    500 12px/1.3  var(--font-mono);
+  --text-mono-lg: 500 15px/1.2  var(--font-mono);
+
+  /* letter-spacing helpers */
+  --tracking-eyebrow: 0.14em;   /* uppercase eyebrows / section kickers */
+  --tracking-tight: -0.01em;
+
+  /* ---- Radii ---- */
+  --radius-xs: 4px;
+  --radius-sm: 6px;     /* buttons, chips inputs */
+  --radius-md: 8px;     /* cards */
+  --radius-lg: 12px;
+  --radius-pill: 999px; /* emotion/actor chips */
+
+  /* ---- Spacing scale (4px base) ---- */
+  --space-1: 4px;  --space-2: 8px;  --space-3: 12px; --space-4: 16px;
+  --space-5: 20px; --space-6: 24px; --space-8: 32px; --space-10: 40px;
+  --space-12: 48px; --space-16: 64px;
+}
+
+/* ============ DARK THEME (opt-in) ============ */
+:root[data-theme="dark"], .theme-dark {
+  --bg:           #1E1E1E;
+  --surface-1:    #282828;
+  --surface-2:    #3C3C3C;
+  --surface-3:    #4A4A4A;
+  --chip:         #343434;
+  --chip-hover:   #444444;
+  --border:       rgba(255,255,255,0.14);
+  --border-strong:rgba(255,255,255,0.28);
+  --divider:      rgba(255,255,255,0.08);
+
+  --fg:           #FFFFFF;
+  --fg-2:         #EDEDED;
+  --fg-muted:     #A8A8A8;
+  --fg-subtle:    #6E6E6E;
+
+  --scrim:        rgba(0,0,0,0.55);
+  --shadow-1:     0 1px 2px rgba(0,0,0,0.45);
+  --shadow-2:     0 6px 20px rgba(0,0,0,0.45);
+  --shadow-3:     0 16px 48px rgba(0,0,0,0.55);
+}
+
+/* ============================================================
+   Semantic element defaults — opt in by adding class "cia"
+   to a root container, or apply :where on body in a kit.
+   ============================================================ */
+.cia, .cia * { box-sizing: border-box; }
+.cia {
+  background: var(--surface-1);
+  color: var(--fg);
+  font: var(--text-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+.cia h1 { font: var(--text-h1); letter-spacing: var(--tracking-tight); margin: 0; }
+.cia h2 { font: var(--text-h2); letter-spacing: var(--tracking-tight); margin: 0; }
+.cia h3 { font: var(--text-h3); margin: 0; }
+.cia p  { font: var(--text-body); margin: 0; color: var(--fg-2); }
+.cia .eyebrow {
+  font: var(--text-caption);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-eyebrow);
+  color: var(--fg-muted);
+}
+.cia .mono { font: var(--text-mono); }
+.cia a { color: var(--amber); text-decoration: none; }
+
+/* ============================================================
+   Dots and background gradients — opt in by adding class "dot-divider" or "dot-background"
+   ============================================================ */
+
+.dot-divider{
+  height:96px;
+  background-image:radial-gradient(circle,rgba(230,159,0,.32) 3px,transparent 3px);
+  background-size:40px 20px;
+}
+
+.dot-divider.top{
+  mask-image: linear-gradient(to bottom, black 0%, black 50%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, black 50%, transparent 100%);
+}
+
+.dot-divider.bottom{
+  mask-image: linear-gradient(to bottom, transparent 100%,black 50%, black 0%, );
+  -webkit-mask-image: linear-gradient(to bottom, transparent 100%, black 50%, black 0%, );
+}
+
+.prod-connector{display:flex;flex-direction:column;align-items:center;gap:6px;margin:72px 0;}
+
+.prod-connector .conn-line{width:220px;height:4px;position:relative;display:flex;background:none;}
+.prod-connector .conn-line::before{
+  content:"";position:absolute;inset:0;background-size:10px 4px;background-repeat:repeat-x;
+  background-image:radial-gradient(circle,rgba(230,159,0,.35) 1.5px,transparent 2px);
+  mask-image:linear-gradient(90deg,transparent,#000 20%,#000 80%,transparent);
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 20%,#000 80%,transparent);
+}
+
+.prod-connector .conn-line:nth-child(2)::before{
+    background-image:radial-gradient(circle,rgba(230,159,0,.75) 1.5px,transparent 2px);
+}
+
+.dot-background {
+  position: absolute;top: 15%;bottom: auto;height: 500px;right: 0;width: 15vw; 
+  background-image: radial-gradient(circle at 15px 15px,rgba(230, 159, 0, 0.9) 0px,rgba(230, 159, 0, 0.6) 4px,transparent 8px);
+  background-size: 30px 30px;
+  mask-image: radial-gradient(circle 250px at right center, black 0px, transparent 100%);
+  -webkit-mask-image: radial-gradient(circle 250px at right center, black 0px, transparent 100%);
+  pointer-events: none;
+}
+
+.dot-full-background {
+  /* 1. Make it cover the full screen */
+  position: absolute; /* Fixed keeps it in place while scrolling, change to absolute if preferred */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* Pushes it behind your content */
+  pointer-events: none;
+
+  /* 2. Your original dot pattern */
+  background-image: radial-gradient(
+    circle at 15px 15px,
+    rgba(230, 159, 0, 0.9) 0px,
+    rgba(230, 159, 0, 0.6) 4px,
+    transparent 8px
+  );
+  background-size: 30px 30px;
+
+  /* 3. Inverted mask: transparent in the dead center, fully solid (black) at the edges */
+  mask-image: radial-gradient(circle at center, transparent 0%, black 60%);
+  -webkit-mask-image: radial-gradient(circle at center, transparent 0%, black 60%);
+}
