@@ -37,7 +37,13 @@ a.btn.ghost{color:var(--fg)}
 .nav .right{margin-left:auto;display:flex;align-items:center;gap:14px}
 .nav .login{font:600 14px var(--font-sans);color:var(--fg-muted);white-space:nowrap}
 .nav .login:hover{color:var(--fg)}
-@media(max-width:920px){.nav .links{display:none}}
+/* Links stay visible on mobile — they're the only route to the other page */
+@media(max-width:920px){
+  .nav .row{gap:12px}
+  .nav .links{gap:16px;margin-left:0}
+  .nav .links a{font-size:13px}
+  .nav .right{display:none}
+}
 
 /* ---------- hero ---------- */
 .hero{position:relative;padding:96px 0 0;overflow:hidden}
