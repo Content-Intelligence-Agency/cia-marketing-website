@@ -97,6 +97,13 @@ a.btn.ghost{color:var(--fg)}
 .why-point .why-icon [data-lucide]{width:22px;height:22px;color:var(--amber)}
 .why-point h3{margin:0 0 6px;font:700 18px var(--font-sans);color:#f8f8f8}
 .why-point p{margin:0;font:400 15px/1.5 var(--font-sans);color:#cfcfcf}
+/* Light variant of the .why band, so sections can alternate light/dark */
+.why.light{background:var(--surface-1);border-color:var(--border);color:var(--fg)}
+.why.light .why-intro-card h2{color:var(--fg)}
+.why.light .why-intro-card .lead{color:var(--fg-muted)}
+.why.light .why-point{background:var(--bg);border-color:var(--border);box-shadow:0 10px 30px rgba(0,0,0,.06)}
+.why.light .why-point h3{color:var(--fg)}
+.why.light .why-point p{color:var(--fg-muted)}
 .junkcard{background:var(--surface-2);border:1px solid var(--border);border-radius:var(--radius-lg);padding:34px 32px;position:relative;overflow:hidden}
 .junkcard .lab{font:700 11px var(--font-mono);letter-spacing:.16em;text-transform:uppercase;color:var(--fg-subtle)}
 .junkcard .windows{display:flex;gap:6px;margin:22px 0 8px;height:60px;align-items:flex-end}
@@ -198,7 +205,7 @@ a.btn.ghost{color:var(--fg)}
   padding: 20px;
   z-index: 2;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
-  color: #ffffff; 
+  color: #ffffff;
 }
 .clip-result-label {
   font-size: 12px;
@@ -273,7 +280,7 @@ a.btn.ghost{color:var(--fg)}
 }
 .cta-box .inner {
   position: relative;
-  z-index: 2; 
+  z-index: 2;
 }.cta-box .inner{position:relative}
 .cta-box h2{font:800 44px/1.08 var(--font-sans);letter-spacing:-.025em;margin:14px 0 0;color:#f8f8f8}
 .cta-box p{font:400 18px var(--font-sans);color:#d8d8d8;margin:16px auto 30px;max-width:46ch}
@@ -356,11 +363,11 @@ footer{background:var(--surface-2);border-top:1px solid var(--border);padding:62
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   /* Strict Fixed Dimension Matching */
-  height: 100px; 
+  height: 100px;
   padding: 0 16px;
-  
+
   font-size: 0.95rem;
   font-weight: 600;
   text-align: center;
@@ -368,7 +375,7 @@ footer{background:var(--surface-2);border-top:1px solid var(--border);padding:62
   border-radius: 4px;
   cursor: default;
   overflow: hidden;
-  
+
   /* Creates the diagonal page fold boundary matching the uniform boxes */
   clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%);
 }
@@ -409,9 +416,9 @@ footer{background:var(--surface-2);border-top:1px solid var(--border);padding:62
 
 /* ---- Responsive Design ---- */
 @media (max-width: 992px) {
-  .container.formats-grid { 
-    grid-template-columns: 1fr; 
-    gap: 40px; 
+  .container.formats-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
 }
 
@@ -541,9 +548,9 @@ footer{background:var(--surface-2);border-top:1px solid var(--border);padding:62
   }
 
   .slide-track {
-    animation: scroll 40s linear infinite;
+    animation: scroll 100s linear infinite;
     display: flex;
-    width: calc(250px * 12); /* 6 logos x 2 sets */
+    width: calc(250px * 36); /* 19 logos x 2 sets */
 
     &:hover {
       animation-play-state: paused;
@@ -558,7 +565,7 @@ footer{background:var(--surface-2);border-top:1px solid var(--border);padding:62
     width: 250px;
 
     img {
-      max-width: 75%;   /* a little smaller than the slide */
+      max-width: 75%;
       max-height: 65%;
       width: auto;
       height: auto;
